@@ -1,0 +1,345 @@
+body {
+    background-color: black;
+    color: #b7002b;
+    font-family: WD;
+    background-image: url(../images/image_fond2.png);
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}
+
+#menu {
+    background-image: url(../images/image_menu2.png);
+}
+
+#hautecran ul {
+    list-style-type: none;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+
+#hautecran li::before {
+    content: "| ";
+
+}
+
+#hautecran li {
+    margin: 0 5px;
+
+}
+
+#hautecran li:first-child::before {
+    content: none;
+}
+
+h1 {
+    font-family: titleP;
+    text-align: center;
+    font-size: 1000%;
+    color: white;
+    background-position-y: center;
+    margin: 2% 0 1% 0;
+    padding: 1px 0;
+}
+
+.hautlivre {
+    margin-top: 0;
+}
+
+.equipements {
+    font-size: 250%;
+}
+
+h2 {
+    font-size: 400%;
+    text-decoration: underline;
+    margin-top: 0;
+}
+
+h3 {
+    font-size: 325%;
+    text-decoration: underline;
+    margin-top: 3px;
+}
+
+.imgHDP {
+    height: 60%;
+    width: 60%;
+}
+
+.forme {
+    list-style: none;
+    padding-left: 0;
+    margin: 0;
+}
+
+.zonetxt {
+    background-color: #9e9f7f;
+    border-color: black;
+    font-family: WD;
+    color: black;
+    font-size: 1.5vw;
+}
+
+.avisa {
+    font-size: 250%;
+}
+
+#listeent {
+    margin-top: 0;
+}
+
+.listecrea {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+section.polaroid {
+    width: 250px;
+    background-color: #9e9f7f;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    margin-bottom: 5%;
+}
+
+.imgcrea {
+    max-width: 250px;
+    max-height: 250px;
+    border-radius: 5px;
+}
+
+section.conteneur {
+    text-align: center;
+    font-size: 200%;
+    padding: 5% 10%;
+}
+
+.corp {
+    display: flex;
+    flex-direction: column;
+    margin: 2% 7% 2% 7%;
+}
+
+.haut {
+    background-image: url(../images/journal_haut.png);
+    background-size: 100%;
+    height: 72px;
+    background-position: left bottom;
+    background-repeat: no-repeat;
+}
+
+.middle {
+    background: url(../images/journal_milieu_loop.png) repeat-y;
+    background-size: 100%;
+    padding: 0 8%;
+    background-position: left top;
+}
+
+.bas {
+    background-image: url(../images/journal_bas.png);
+    background-size: 100%;
+    height: 72px;
+    background-position: left top;
+    background-repeat: no-repeat;
+}
+
+.imgObj {
+    max-width: 500px;
+}
+
+.listeObj {
+    font-size: 250%;
+}
+
+.listeMap {
+    font-size: 250%;
+}
+
+.objets {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+
+.basjournal {
+    margin-bottom: 0;
+}
+
+p {
+    text-align: justify;
+    font-size: 250%;
+}
+
+.entitee {
+    font-size: 250%;
+}
+
+.menulien:visited {
+    color: white;
+    background-color: rgb(0, 0, 0, 0);
+    text-decoration: none;
+}
+
+.menulien:link {
+    color: white;
+    text-decoration: none;
+}
+
+.menulien:hover {
+    color: white;
+    background-color: rgb(0, 0, 0, 0);
+    font-family: WD;
+}
+
+.menulien:active {
+    color: white;
+    background-color: rgb(0, 0, 0, 0);
+    font-family: WD;
+}
+
+/*Laisser :visited avant les autres*/
+a:visited {
+    color: #850606;
+    text-decoration: none;
+}
+
+a:link {
+    color: #340505;
+    text-decoration: none;
+}
+
+a:hover {
+    background-color: grey;
+    color: black;
+    font-family: WD;
+}
+
+a:active {
+    background-color: grey;
+    color: black;
+    font-family: WD;
+}
+
+/*Fin block*/
+
+.zoneareatxt {
+    background-color: #9e9f7f;
+    width: 100%;
+    max-width: 100%;
+    font-family: titleP;
+    font-size: 200%;
+}
+
+ul.sanspastile {
+    list-style: "> ";
+    font-size: 300%;
+    margin-bottom: 0;
+}
+
+.boutonenvoie {
+    background-color: #9e9f7f;
+    font-family: titleP;
+    color: black;
+    border-radius: 5px;
+    height: 115%;
+    width: 25%;
+    text-align: center;
+    font-size: 250%;
+}
+
+header {
+    background-color: rgb(0, 0, 0, 0.5);
+    width: auto;
+    text-align: center;
+    color: white;
+    font-size: 300%;
+}
+
+footer {
+    display: flex;
+    flex-direction: row-reverse;
+    padding-right: 1rem;
+    font-size: 250%;
+}
+
+.lefooter:visited {
+    color: white;
+    text-decoration: none;
+}
+
+.lefooter:link {
+    color: white;
+    text-decoration: none;
+}
+
+.lefooter:hover {
+    background-color: white;
+    color: black;
+    font-family: WD;
+}
+
+.lefooter:active {
+    background-color: white;
+    color: black;
+    font-family: WD;
+}
+
+.retourHDP {
+    position: fixed;
+    bottom: 5%;
+    right: 0;
+}
+
+#twitterlogo {
+    height: 50px;
+    width: 50px;
+}
+
+.retourHDP:visited {
+    text-decoration: none;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.retourHDP:hover {
+    text-decoration: none;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.retourHDP:link {
+    text-decoration: none;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+.img {
+    max-width: 75%;
+    max-height: 75%;
+    display: block;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+h4 {
+    font-size: 300%;
+    text-decoration: none;
+    text-align: center;
+    font-weight: normal;
+    margin-bottom: 2%;
+}
+
+.retourHDP:active {
+    text-decoration: none;
+    background-color: rgb(0, 0, 0, 0);
+}
+
+@font-face {
+    font-family: WD;
+    src: url(../fonts/October_Crow.ttf);
+}
+
+@font-face {
+    font-family: titleP;
+    src: url(../fonts/lazy_dog.ttf);
+}
