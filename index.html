@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Un site web regroupant plusieurs informations sur le jeux vidéo phasmophobia">
+    <link id="theme-link" rel="stylesheet" href="/css/style1.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Guide Phasmophobia</title>
+    
+</head>
+
+<body id="menu">
+    <header id="hautecran"> <!--Menu de navigation entre les pages-->
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="menulien">Accueil</a></li>
+                <li><a href="/listeEntitees.html" class="menulien">Les entites</a></li>
+                <li><a href="/listeMaps.html" class="menulien">Les Maps</a></li>
+                <li><a href="/listeObjets.html" class="menulien">Les Objets</a></li>
+                <li><a href="/avis.html" class="menulien">Votre avis</a></li>
+                <li><a href="/credits.html" class="menulien">Createurs</a></li>
+                <li><a id="theme-selector" href="javascript:;" class="menulien">Changer de themes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1>wiki Phasmophobia</h1>
+    <div class="corp"> <!--Contient le journal-->
+        <div class="haut"></div> <!--Début du journal-->
+        <section class="middle"> <!--Début de la zone où le texte du journal se trouve-->
+            <h2>Presentation rapide</h2>
+            <p><a href="https://fr.wikipedia.org/wiki/Phasmophobia_(jeu_vid%C3%A9o)" target="_blank">Phasmophobia</a> est un jeu de
+                survie developpe par un studio independant, <a href="https://kineticgames.co.uk/">Kinetic Games</a>. Il
+                est sorti en septembre 2020. Le but de ce jeu est de decouvrir dans un lieu hante, le type de fantome
+                qui nous veut du mal sans se faire tuer. Il existe plusieurs modes de difficultes: amateur,
+                intermediaire, expert, cauchemar, personnalise. Vous pouvez rencontrer plusieurs <a
+                    href="/listeEntitees.html">types de fantomes</a> avec des specificites differentes que vous devrez
+                chasser avec des <a href="/listeObjets.html">outils speciaux</a>, a vous de choisir quel outil sera le
+                plus adapte dans chaque situation.</p>
+            <ul class="sanspastile"> <!--Menu de la liste des pages-->
+                <li><a href="/listeEntitees.html">Liste entites</a></li>
+                <li><a href="/listeMaps.html">Liste maps</a></li>
+                <li><a href="/listeObjets.html">Liste Objets</a></li>
+                <li><a href="/avis.html">Donnez votre avis</a></li>
+                <li><a href="/credits.html">Createurs</a></li>
+            </ul>
+        </section> <!--Fin de la section middle du Journal-->
+        <div class="bas"></div> <!--Fin du Journal-->
+    </div>
+    <script>
+        window.addEventListener('load', function() {
+            document.getElementById("theme-selector").addEventListener("click", function() {
+                let themeLink = document.getElementById("theme-link");
+                themeLink.href = themeLink.href.indexOf("1")>0 ? "/css/style2.css" : "/css/style1.css";
+                console.log("Changed to " + themeLink.href);
+            });
+        });
+    </script>
+</body>
+
+</html>

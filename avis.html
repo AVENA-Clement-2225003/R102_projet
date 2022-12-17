@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+    <meta charset="utf-8">
+    <meta name="description" content="Une page web permettant de donner son avis sur le site">
+    <link id="theme-link" rel="stylesheet" href="/css/style1.css">
+    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <title>Avis</title>
+</head>
+
+<body>
+    <header id="hautecran"> <!--Menu de navigation entre les pages-->
+        <nav>
+            <ul>
+                <li><a href="/index.html" class="menulien">Accueil</a></li>
+                <li><a href="/listeEntitees.html" class="menulien">Les entites</a></li>
+                <li><a href="/listeMaps.html" class="menulien">Les Maps</a></li>
+                <li><a href="/listeObjets.html" class="menulien">Les Objets</a></li>
+                <li><a href="/avis.html" class="menulien">Votre avis</a></li>
+                <li><a href="/credits.html" class="menulien">Createurs</a></li>
+                <li><a id="theme-selector" href="javascript:;" class="menulien">Changer de themes</a></li>
+            </ul>
+        </nav>
+    </header>
+    <h1> Votre avis</h1>
+    <div class="corp"> <!--Contient le journal-->
+        <div class="haut"></div> <!--Début du journal-->
+        <div class="middle"> <!--Début de la zone où le texte du journal se trouve-->
+            <form action="mailto:siteguidephasmo2023@gmail.com">
+                <ul class="forme"> <!--Formulaire pour avoir l'avis des internautes-->
+                    <li>
+                        <label for="mail" class="avisa">Email:</label>
+                        <input type="email" id="mail" class="zonetxt">
+                    </li>
+                    <li>
+                        <label for="pseudo" class="avisa">Pseudo:</label>
+                        <input type="text" id="pseudo" class="zonetxt">
+                    </li>
+                    <li>
+                        <label for="nv" class="avisa">Niveau:</label>
+                        <input type="number" id="nv" class="zonetxt">
+                    </li>
+                    <li>
+                        <label for="avis" class="avisa">Ameliorations a faire:</label>
+                        <textarea id="avis" class="zoneareatxt"></textarea>
+                    </li>
+                    <li>
+                        <label for="envoie" class="avisa"></label>
+                        <input type="submit" id="envoie" class="boutonenvoie">
+                    </li>
+                </ul>
+            </form>
+        </div> <!--Fin de la section middle du Journal-->
+        <div class="bas"></div> <!--Fin du Journal-->
+    </div>
+    <footer><a href="index.html" class="lefooter">Revenir a la page principale &lt;</a></footer>
+    <script>
+        window.addEventListener('load', function () {
+            document.getElementById("theme-selector").addEventListener("click", function () {
+                let themeLink = document.getElementById("theme-link");
+                themeLink.href = themeLink.href.indexOf("1") > 0 ? "/css/style2.css" : "/css/style1.css";
+                console.log("Changed to " + themeLink.href);
+            });
+        });
+    </script>
+</body>
+
+</html>
